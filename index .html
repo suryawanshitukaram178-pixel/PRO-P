@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Blast - Background Color Changer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Floating bubbles -->
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+
+  <div class="container">
+    <h1>Color Blast <span class="emoji">🎨</span></h1>
+    <p class="subtitle">Click a button to change the background!</p>
+
+    <div class="color-display">
+      <p>Current Color</p>
+      <div class="color-code" id="colorCode">#667eea</div>
+    </div>
+
+    <div class="button-grid">
+      <button class="color-btn btn-red" data-gradient="linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%)">Sunset Red</button>
+
+      <button class="color-btn btn-blue" data-gradient="linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">Ocean Blue</button>
+
+      <button class="color-btn btn-green" data-gradient="linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)">Mint Green</button>
+
+      <button class="color-btn btn-purple" data-gradient="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">Violet Dream</button>
+
+      <button class="color-btn btn-orange" data-gradient="linear-gradient(135deg, #fa709a 0%, #fee140 100%)">Peachy Orange</button>
+
+      <button class="color-btn btn-pink" data-gradient="linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">Bubblegum Pink</button>
+
+      <button class="color-btn btn-teal" data-gradient="linear-gradient(135deg, #30cfd0 0%, #330867 100%)">Deep Teal</button>
+
+      <button class="color-btn btn-yellow" data-gradient="linear-gradient(135deg, #fad961 0%, #f76b1c 100%)">Golden Sun</button>
+    </div>
+
+    <button class="random-btn" id="randomBtn">
+      🎲 Random Color Magic!
+    </button>
+  </div>
+
+  <div class="copy-notification" id="copyNotification">
+    Color code copied! ✨
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
